@@ -1,0 +1,112 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #2e3a87, #4e56a6);
+  color: #e0e0e0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#main {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#main:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+#title {
+  font-size: 2.2em;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+#img-div {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+#image:hover {
+  transform: scale(1.05);
+}
+
+#img-caption {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #ffd700;
+}
+
+#tribute-info {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-align: left;
+  color: #f5f5f5;
+}
+
+#tribute-link {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#tribute-link:hover {
+  background: #ffd700;
+  color: #393889;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  #title {
+    font-size: 1.8em;
+  }
+
+  #img-caption {
+    font-size: 1em;
+  }
+
+  #tribute-info {
+    font-size: 1em;
+  }
+
+  #tribute-link {
+    font-size: 1em;
+  }
+}
