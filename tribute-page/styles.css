@@ -1,11 +1,9 @@
-/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General styles */
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #2e3a87, #4e56a6);
@@ -92,7 +90,6 @@ body {
   color: #393889;
 }
 
-/* Responsive styles */
 @media (max-width: 600px) {
   #title {
     font-size: 1.8em;
